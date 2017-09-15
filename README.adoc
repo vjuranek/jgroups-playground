@@ -1,0 +1,13 @@
+= JGroups playground
+
+Various testing/example http://www.jgroups.org[JGroups] apps.
+
+== Hints
+
+=== Kernel params
+Tunning Linux kernel  params, mainly netwotk related.
+
+=== Firewalld settings
+Various usefull _firewalld_ settings.
+
+* `firewall-cmd --get-active-zones`
