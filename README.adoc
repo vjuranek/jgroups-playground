@@ -4,6 +4,12 @@ Various testing/example http://www.jgroups.org[JGroups] apps.
 
 == Hints
 
+=== Program params
+
+Usually helps running with preffered IPv4 and eventually binding to localhost:
+
+`java -Djava.net.preferIPv4Stack=true -Djgroups.bind_addr=127.0.0.1`
+
 === Kernel params
 Tunning Linux kernel  params, mainly netwotk related.
 
@@ -11,6 +17,17 @@ Tunning Linux kernel  params, mainly netwotk related.
 Various usefull _firewalld_ settings.
 
 * `firewall-cmd --get-active-zones`
+
+_localhost_ zone config, which accepts all connections:
+[source,xml]
+----
+<?xml version="1.0" encoding="utf-8"?>
+<zone target="ACCEPT">
+  <short>Localhost</short>
+  <description>All network connections are accepted.</description>
+  <interface name="lo"/>
+</zone>
+----
 
 ==== References
 * http://www.firewalld.org/documentation[firewalld documentation]
