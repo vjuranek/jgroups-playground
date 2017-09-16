@@ -2,14 +2,13 @@
     xsi:schemaLocation="urn:org:jgroups http://www.jgroups.org/schema/jgroups.xsd">
 
     <TCP 
-        bind_port="12345"
         max_bundle_size="64K" 
         enable_diagnostics="true"
 
         thread_pool.min_threads="2" 
         thread_pool.max_threads="8"
         thread_pool.keep_alive_time="5000" />
-    <PING />
+    <MPING />
     <MERGE3 max_interval="30000" min_interval="10000" />
     <FD_SOCK />
     <FD_ALL />

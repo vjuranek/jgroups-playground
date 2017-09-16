@@ -5,7 +5,7 @@ import org.jgroups.util.Util;
 
 public class JGroupsSimple {
     public static void main(String[] args) throws Exception {
-        try (JChannel channel = new JChannel("udp-test.xml")) {
+        try (JChannel channel = new JChannel("tcp-test.xml")) {
             channel.setReceiver(new EchoReciever());
             channel.connect("test-cluster");
             readAndSendLoop(channel);
