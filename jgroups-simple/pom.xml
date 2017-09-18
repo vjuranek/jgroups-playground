@@ -9,10 +9,14 @@
 
     <properties>
         <java.main.class>com.github.vjuranek.jgroups.JGroupsSimple</java.main.class>
+        <!-- dependencies -->
+        <version.jgroups>4.0.6.Final</version.jgroups>
+        <version.log4j>2.9.0</version.log4j>
+        <!-- <version.log4j2></version.log4j2> -->
+        <!-- jdk, maven plugins, etc -->
         <version.jdk>1.8</version.jdk>
         <version.maven.compiler>3.3</version.maven.compiler>
         <version.maven.shade>2.4.3</version.maven.shade>
-        <version.jgroups>4.0.6.Final</version.jgroups>
     </properties>
 
     <dependencies>
@@ -20,6 +24,16 @@
             <groupId>org.jgroups</groupId>
             <artifactId>jgroups</artifactId>
             <version>${version.jgroups}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${version.log4j}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${version.log4j}</version>
         </dependency>
     </dependencies>
 

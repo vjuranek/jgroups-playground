@@ -4,6 +4,7 @@ import org.jgroups.JChannel;
 import org.jgroups.util.Util;
 
 public class JGroupsSimple {
+   
     public static void main(String[] args) throws Exception {
         try (JChannel channel = new JChannel("tcp-test.xml")) {
             channel.setReceiver(new EchoReciever());
