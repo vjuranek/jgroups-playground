@@ -10,7 +10,7 @@
     <properties>
         <java.main.class>com.github.vjuranek.jgroups.JGroupsSimple</java.main.class>
         <!-- dependencies -->
-        <version.jgroups>4.0.6.Final</version.jgroups>
+        <version.jgroups>4.0.11.Final</version.jgroups>
         <version.log4j>2.9.0</version.log4j>
         <!-- <version.log4j2></version.log4j2> -->
         <!-- jdk, maven plugins, etc -->
