@@ -31,4 +31,4 @@ _localhost_ zone config, which accepts all connections:
 
 ==== References
 * http://www.firewalld.org/documentation[firewalld documentation]
-* https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7-Beta/html/Security_Guide/sec-Using_Firewalls.html[RHEL 7.4.Beta firewall setup]
+* https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/security_guide/sec-using_firewalls[RHEL 7 firewall setup]
