@@ -11,7 +11,6 @@
         <java.main.class>com.github.vjuranek.jgroups.RaftCounter</java.main.class>
         <!-- dependencies -->
         <version.jgroups-raft>0.5.0.Final</version.jgroups-raft>
-        <version.log4j>2.9.0</version.log4j>
 
         <!-- jdk, maven plugins, etc -->
         <version.jdk>1.8</version.jdk>
@@ -24,11 +23,6 @@
             <groupId>org.jgroups</groupId>
             <artifactId>jgroups-raft</artifactId>
             <version>${version.jgroups-raft}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-api</artifactId>
-            <version>${version.log4j}</version>
         </dependency>
     </dependencies>
 
