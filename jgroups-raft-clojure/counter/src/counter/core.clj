@@ -1,4 +1,5 @@
 (ns counter.core
+  (:gen-class)
   (:import
     (org.jgroups JChannel)
     (org.jgroups.blocks.atomic Counter)
