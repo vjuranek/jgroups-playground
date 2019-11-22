@@ -6,6 +6,10 @@
     (org.jgroups.raft.blocks CounterService)))
 
 
+(defn provide-name
+  []
+  (throw (Exception. "You have to provice node name via -name argument.")))
+
 (defn jchannel
   [props, name]
   (-> (JChannel. props) (.name name)))
@@ -26,9 +30,9 @@
     cnt))
 
 (defn run
-  []
+  [name]
   (let [cont (atom true),
-        cnt (start-counter "raft.xml" "A")]
+        cnt (start-counter "raft.xml" name)]
     (while @cont
       (do
         (println "[1] Increment")
@@ -41,6 +45,11 @@
 
 (defn -main
   [& args]
-  (do
-    (println "JGroups Raft counter")
-    (run)))
+  (if-not (empty? args)
+    (let [[name-arg, name] args]
+      (if (= "-name" name-arg)
+        (do
+          (println "JGroups Raft counter")
+          (run name))
+        (provide-name)))
+    (provide-name)))
