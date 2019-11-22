@@ -22,7 +22,7 @@
 hs_err_pid*
 
 
-*/target/
+target/
 .classpath
 .project
 .settings/
@@ -31,3 +31,6 @@ hs_err_pid*
 *.iml
 
 *~
+
+# clojure
+.lein-repl-history
