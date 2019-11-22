@@ -52,4 +52,5 @@
           (println "JGroups Raft counter")
           (run name))
         (provide-name)))
-    (provide-name)))
+    (provide-name))
+  (System/exit 0))
