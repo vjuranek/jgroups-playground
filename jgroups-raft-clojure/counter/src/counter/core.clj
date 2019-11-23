@@ -10,6 +10,8 @@
   []
   (throw (Exception. "You have to provice node name via -name argument.")))
 
+(def raft-config "raft.xml")
+
 (defn jchannel
   [props, name]
   (-> (JChannel. props) (.name name)))
@@ -32,7 +34,7 @@
 (defn run
   [name]
   (let [cont (atom true),
-        cnt (start-counter "raft.xml" name)]
+        cnt (start-counter raft-config name)]
     (while @cont
       (do
         (println "[1] Increment")
