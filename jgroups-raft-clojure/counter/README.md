@@ -1,14 +1,6 @@
-# counter
-
-A Clojure library designed to ... well, that part is up to you.
+# JGroups counter
 
 ## Usage
 
-FIXME
-
-## License
-
-Copyright © 2019 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+* `lein uberjar`
+* `java -jar target/counter-0.1.0-SNAPSHOT-standalone.jar -name n{1-5}`
