@@ -13,7 +13,7 @@
 
 (defn counter
   [jch]
-  (-> (CounterService. jch) (.raftId (.name jch)) (.replTimeout 5000) (.counter "counter")))
+  (-> (CounterService. jch) (.raftId (.name jch)) (.replTimeout 5000) (.allowDirtyReads false) (.counter "counter")))
 
 (defn join-channel
   [jch]
